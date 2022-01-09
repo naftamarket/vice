@@ -15,8 +15,11 @@ Including another URLconf
 """
 
 from django.urls import path
+
 from . import vievs
 urlpatterns = [
     
-    path('', vievs.home)
+    path('', vievs.home),
+    path("reversed/", vievs.reverse, name='reverse' )
+    
 ]
